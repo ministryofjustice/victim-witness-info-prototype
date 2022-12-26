@@ -1,0 +1,51 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+
+    <h1 class="govuk-heading-xl">Get specialist help after a crime</h1>
+    <h2 class="govuk-heading-l">You might need specialist support after certain types of crime.</h2>
+    <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">Coronavirus (COVID-19): victim and witness services</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I've been attacked or threatened</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I'm being stalked or harassed</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I'm a young victim of crime</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I've been sexually assaulted</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I'm experiencing domestic abuse</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">A close relative has been killed</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I've experienced hate crime</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I'm a relative of a victim</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I'm a victim of terrorism</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">I would like digital support</a>
+      </li>
+    </ul>
+
+    <h2 class="govuk-heading-l"><a class="govuk-link" href="#">Claim compensation</a></h2>
+    <p class="govuk-body">You may be able to claim compensation or apply for benefit payments if you've been affected by a crime.</p>
+{% endblock %}
