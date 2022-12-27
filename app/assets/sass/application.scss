@@ -4,3 +4,54 @@
 // 
 
 // Add extra styles here
+.govuk-list { margin-left: 40px; }
+ul.govuk-list { list-style-type: disc; margin-left: 40px;}
+ol.govuk-list { list-style-type: decimal;}
+
+.tasks-nav {
+	ol.govuk-list {
+		margin-left: 0;
+		li {
+			position: relative;
+			padding-left: 25px;
+			list-style-type: none;
+
+			&:before {
+				content: "—";
+		    position: absolute;
+		    left: 0;
+		    width: 20px;
+		    overflow: hidden;
+			}
+		}
+	}
+}
+
+hr { margin: 40px 0 30px; }
+
+.glossary {
+	background-color: #dedede;
+	padding: 20px;
+	dl.govuk-list {
+		margin: 10px 0;
+		dt {
+			margin: 20px 0 0 0;
+			padding: 0;
+			font-weight: bold; 
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+
+		}
+	}
+}
+
+.glossary-nav-letters {
+	ul.govuk-list {
+		list-style-type: none;
+		margin: 0;
+
+		li { padding: 10px 0; }
+	}
+}

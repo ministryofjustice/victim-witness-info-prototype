@@ -1,16 +1,31 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-Home – {{serviceName}} – GOV.UK Prototype Kit
+{{serviceName}} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block content %}
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
     <h1 class="govuk-heading-xl">Get specialist help after a crime</h1>
+    <aside class="tasks-nav" role="complementary">
+      <nav aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-body">Contents</h2>
+        <ol class="govuk-list">
+          <li aria-current="true">Overview</li>
+          <li><a href="reporting-a-crime">Reporting a crime</a></li>
+          <li><a href="investigating-a-crime">Investigating a crime</a></li>
+          <li><a href="#">Going to court</a></li>
+          <li><a href="#">After a trial</a></li>
+        </ol>
+      </nav>
+    </aside>
+    <hr>
+
     <h2 class="govuk-heading-l">You might need specialist support after certain types of crime.</h2>
     <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="reporting-a-crime">Reporting a crime (click)</a>
+      </li>
       <li>
         <a class="govuk-link" href="#">Coronavirus (COVID-19): victim and witness services</a>
       </li>
@@ -48,4 +63,17 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 
     <h2 class="govuk-heading-l"><a class="govuk-link" href="#">Claim compensation</a></h2>
     <p class="govuk-body">You may be able to claim compensation or apply for benefit payments if you've been affected by a crime.</p>
+
+    <nav class="govuk-pagination govuk-pagination--block" role="navigation" aria-label="Pagination">
+      <div class="govuk-pagination__next">
+        <a class="govuk-link govuk-pagination__link" href="reporting-a-crime" rel="next">
+          <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+            <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+          </svg>
+          <span class="govuk-pagination__link-title">Next</span>
+            <span class="govuk-visually-hidden">:</span>
+            <span class="govuk-pagination__link-label">Reporting a crime</span>
+        </a>
+      </div>
+    </nav>
 {% endblock %}
