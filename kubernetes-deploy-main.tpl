@@ -15,6 +15,12 @@ spec:
       containers:
       - name: prototype
         image: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/${ECR_NAME}:${IMAGE_TAG}
+        env:
+          - name: PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: basic-auth
+                key: password
         ports:
         - containerPort: 3000
 ---
