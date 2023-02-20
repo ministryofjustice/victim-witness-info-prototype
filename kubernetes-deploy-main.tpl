@@ -43,8 +43,6 @@ kind: Ingress
 metadata:
   name: prototype-ingress-${BRANCH}
   annotations:
-    nginx.ingress.kubernetes.io/auth-type: basic
-    nginx.ingress.kubernetes.io/auth-secret: real-basic-auth
     external-dns.alpha.kubernetes.io/set-identifier: prototype-ingress-${BRANCH}-${KUBE_NAMESPACE}-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
